@@ -48,9 +48,13 @@
   * $ git reset --hard HEAD~1 // 이전버전으로 완벽히 돌려준다. HEAD의 최신버전에서 뒤로 한 버전 되돌린다
   * $ git reset --hard ORIG_HEAD // 되돌리기를 잘못해서 그것을 취소하려는 경우; 다음 명령을 입력하기 전까지 1번은 할 수 있다
 
-## 13. branch 가져오기 및 삭제
+### 13. branch 가져오기 및 삭제
   * $ git branch -r // 원격저장소에 있는 branch들의 목록을 확인할수 있다
   * $ git checkout -t 별칭/브랜치 이름 // 원격저장소에 branch를 로컬환경으로 가져온다.
     * ex) $ git checkout -t origin/purple 
   * $ git branch -d branch 이름 // 브랜치 삭제
   * $ git branch -b branch 이름 // 브랜치 생성 및 이동
+
+### 14. 충돌, 로컬병합
+  * $ git pull origin master // 원격저장소 master브랜치를 로컬저장소로 당겨온다
+  * 충돌이 날 경우 위의 명령어를 작성 후, vscode같은 경우 에디터의 힘으로 현재요청을 받아들일지 아님 수신변경 사항을 가르킬지 사용자가 선택할수 있으며 이 2개가 전부 아닌 새로운 사항을 작성할 수 있다.
