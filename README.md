@@ -47,3 +47,10 @@
 ### 12. 이전 버전으로 돌리는 법
   * $ git reset --hard HEAD~1 // 이전버전으로 완벽히 돌려준다. HEAD의 최신버전에서 뒤로 한 버전 되돌린다
   * $ git reset --hard ORIG_HEAD // 되돌리기를 잘못해서 그것을 취소하려는 경우; 다음 명령을 입력하기 전까지 1번은 할 수 있다
+
+## 13. branch 가져오기 및 삭제
+  * $ git branch -r // 원격저장소에 있는 branch들의 목록을 확인할수 있다
+  * $ git checkout -t 별칭/브랜치 이름 // 원격저장소에 branch를 로컬환경으로 가져온다.
+    * ex) $ git checkout -t origin/purple 
+  * $ git branch -d branch 이름 // 브랜치 삭제
+  * $ git branch -b branch 이름 // 브랜치 생성 및 이동
